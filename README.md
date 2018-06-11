@@ -28,4 +28,4 @@ Test results on various datasets.
 |PWNet(C=200; G=25) |  154  |  8M    | 5.41  | 4.03  | 21.31 | 19.75  | 1.56   |
 
 ## Acknowledgement
-This reimplementation are adapted from the [vision_networks](https://github.com/ikhlestov/vision_networks) repository by [ikhlestov] (https://github.com/ikhlestov).
+This reimplementation are adapted from the [vision_networks](https://github.com/ikhlestov/vision_networks) repository by ikhlestov (https://github.com/ikhlestov).
