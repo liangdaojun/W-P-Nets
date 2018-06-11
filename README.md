@@ -9,7 +9,7 @@ Two network architectures are implemented by dividing the convolution kernels of
 
 ## Training
 ```python
-    python run.py --model_type=WPNet(PWNet) --dataset=C10(C10+,C100,C100+,SVHN,ImageNet) --initial_channel=50(72,96,100,120,150,180)
+    python run.py --model_type=WPNet(PWNet) --dataset=C10(C10+,C100,C100+,SVHN) --initial_channel=50(72,96,100,120,150,180)
 ```
 
 - Model was tested with Python 3.5.2 with CUDA.
