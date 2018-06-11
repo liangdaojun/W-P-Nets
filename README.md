@@ -6,12 +6,14 @@ The performance and parameters of neural networks have a positive correlation, a
 <img src="https://github.com/liangdaojun/W-P-Nets/blob/master/images/PWNets.jpg" width="480">
 
 ## Training
-python run.py --model_type=WPNet(PWNet) --dataset=C10(C10+,C100,C100+,SVHN,ImageNet) --initial_channel=50(72,96,100,120,150,180)
+.. code::
+    python run.py --model_type=WPNet(PWNet) --dataset=C10(C10+,C100,C100+,SVHN,ImageNet) --initial_channel=50(72,96,100,120,150,180)
 
 - Model was tested with Python 3.5.2 with CUDA.
 - Model should work as expected with TensorFlow >= 0.10. Tensorflow 1.0 support was recently included.
 
 ## Test
+-----
 Test results on various datasets. 
 
 ====================== ====== ====== =========== =========== ============== ============== ==============
@@ -25,3 +27,10 @@ PWNet(C=200; G=25)     154    8M     5.41        4.03        21.31          19.7
 ====================== ====== ====== =========== =========== ============== ============== ==============
 ## Acknowledgement
 This reimplementation are adapted from the [vision_networks](https://github.com/ikhlestov/vision_networks) repository by [ikhlestov] (https://github.com/ikhlestov).
+
+====================== ====== =========== =========== ============== ==============
+Model type             Depth  C10          C10+       C100           C100+
+====================== ====== =========== =========== ============== ==============
+DenseNet(*k* = 12)     40     6.67(7.00)  5.44(5.24)  27.44(27.55)   25.87(24.42)
+DenseNet-BC(*k* = 12)  100    5.54(5.92)  4.87(4.51)  24.88(24.15)   22.85(22.27)
+====================== ====== =========== =========== ============== ==============
